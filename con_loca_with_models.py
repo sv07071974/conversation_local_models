@@ -1,4 +1,13 @@
-Do. SIMILAR THING for the following code 
+import os
+
+MODEL_PATH = os.getenv("MODEL_PATH", "./models/llama3.2_latest")
+
+def load_model():
+    print(f"Loading model from: {MODEL_PATH}")
+    # Load the model here (if needed)
+
+load_model()
+
 
 "# Import required libraries
 import requests  # For making HTTP requests to the Ollama API
